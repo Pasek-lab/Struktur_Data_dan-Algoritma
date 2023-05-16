@@ -26,7 +26,7 @@ bool isFull(){
 void display(){
 	if(!isEmpty()){
 		cout << "data tersimpan : " << endl;
-		for(int a = 0; a < top; a++)
+		for(int a = top-1; a >= 0; a--)
 			cout <<  a+1 << "." << data[a] << endl;	 
 	}else{
 		cout << "data tidak tersedia !" << endl;		
